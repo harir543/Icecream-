@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            padding: 0;
+            margin: 0;
+        }*/
+        /* body{background-color: rgb(190, 190, 190);} */
+        .video-container
+        {
+            position:relative;
+            height: 700px;
+            width: 98vw;
+            border-radius: 100% 100% 0 0;
+            background-color: rgb(165, 179, 245);
+            overflow: hidden;
+        }
+        video
+        {
+            width: 100%;
+        }
+        *{font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+            margin: 0px;
+            padding: 0px;
+        } 
+         .top
+         {
+         height: fit-content;
+            width: 98vw;
+            border-radius: 100% 100% 0 0;
+            /* background-color: rgb(142, 209, 221); */
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+         }
+         
+        
+        
+      
+       
+        .cloud1 {
+            height: 5em;
+            width: 6em;
+    left: 20%;
+    position: absolute;
+    top: 30%;
+    
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+.cloud2 {
+    height: 5em;
+    width: 6em;
+    left: 700%;
+    position: absolute;
+    top: 20%;
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+.cloud3 {
+    height: 5em;
+    width: 6em;
+    left: 60%;
+    position: absolute;
+    top: 25%;
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+.cloud4 {
+    height: 5em;
+    width: 6em;
+    left: 80%;
+    position: absolute;
+    top: 20%;
+  
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+.cloud5 {
+    height: 5em;
+    width: 6em;
+    left: 30%;
+    position: absolute;
+    top: 35%;
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+.cloud6 {
+    height: 5em;
+    width: 6em;
+    left: 15%;
+    position: absolute;
+    top: 25%;
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+
+.cloud7 {
+    height: 5em;
+    width: 6em;
+    left: 35%;
+    position: absolute;
+    top: 30%;
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+.cloud8 {
+    height: 5em;
+    width: 6em;
+    left: 50%;
+    position: absolute;
+    top: 35%;
+    -webkit-filter: drop-shadow(0 2px 3px hsla(0,0%,0%,.25));
+}
+@keyframes moveClouds {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(300%);
+    }
+}
+
+.cloud {
+    position: absolute;
+    animation: moveClouds 10s linear infinite;
+}
+.sun {
+    width: 150px; /* Adjust size as needed */
+    filter: drop-shadow(0 0 30px yellow);
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes snowfall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0.5;
+    }
+}
+.cone
+         {
+            height: 700px;
+            width: 98vw;
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
+            position: relative;
+        }
+.snowflake {
+    position: absolute;
+    width: 50px; /* Adjust size */
+    animation: snowfall 5s linear infinite;
+    left: 20%;
+}
+.sn1{left: 20%;}
+.sn2{left: 30%;top: 20%;}
+.sn3{left: 50%;}
+.sn4{left: 70%;top: 30%;}
+.sn5{left: 80%;}
+.stree
+{
+    
+    width:400px;
+    height: 600px;
+    position: absolute;left: 50%;top:60%;transform: translate(-50%,-50%);;
+
+}
+
+.cup
+        {
+            height: 700px;
+            width: 98vw;
+            background-color: rgb(231, 165, 41);
+            overflow: hidden;
+            position: relative;
+        }
+        .atree{width: 500px;
+            
+        position: absolute;left: 50%;top:60%;transform: translate(-50%,-50%);}
+        .aleaves{width: 80px;position: absolute;animation: moveClouds 5s linear infinite;}
+        .al1{left: 10%;}
+        .al2{left: 30%;top: 30%;}
+        .al3{left: 40%;top: 20%;}
+        .al4{left: 15%;top:60%;}
+        .al5{left: 80%;top: 40%;}
+
+        .kulfi
+        {
+            height: 700px;
+            width: 98vw;
+            background-color: rgb(252, 184, 240);
+            position: relative;
+            overflow: hidden;
+        }
+        .chocobar
+        {
+            height: 700px;
+            width: 98vw;
+            background: rgb(62, 141, 245);
+            position: relative;
+            overflow: hidden;
+        }
+        .rain{
+            position: absolute;
+        width: 40px;
+    height: 50px;
+    animation: rainfall 1.5s linear infinite;
+}
+.r1{left: 10%;}
+.r2{left: 25%;top: -20%;}
+.r3{left: 35%;}
+.r4{left: 40%;top: -30%;}
+.r5{left: 55%;}
+.r6{left: 65%;}
+.r7{left: 75%;top: -20%;}
+.r8{left: 80%;}
+.r9{left: 85%;top: -30%;}
+.r10{left: 90%;}
+@keyframes rainfall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0.5;
+    }
+}
+    .stick
+        {
+            position: relative;
+            width: 150px;
+            height: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(250, 187, 104);
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        /* .sproduct {
+    width: 200px;
+    height: 200px;
+    background-image: url('/sum/Kulfi.jpeg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    column-gap: 20px;
+}
+.product-container img{width: 100%;}
+.add{width:fit-content;padding: 10px;border-radius: 10px;position: absolute;cursor: pointer;background-color:transparent;border:none;font-size: 1.3rem;}
+.sum1{left: 85%;}
+.sum2{top: 82%;left: 30%;}
+.add:hover{background-color:rgb(62, 141, 245) ;color:white;transition: 1s;}
+
+.image-container {
+    position: relative;
+    width: 500px; /* Adjust size as needed */
+}
+
+.image1, .image2 {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.image2 {
+    mix-blend-mode: multiply; /* Try other values like overlay, screen */
+    opacity: 0.8; /* Adjust for transparency effect */
+}
+
+    </style>
+</head>
+<body>
+       
+   
+    <div class="top">
+ <div class="video-container">
+    <div class="product-container">
+        <img src="/sum/beach.png" alt="">
+        <input class="add sum1" type="submit" value="Add Badam Kulfi">
+        <input class="add sum2" type="submit" value="Add Ball Icecream">
+
+    </div>    
+
+    <img src="sun.png" class="sun">
+    <img src="cloud.png" class="cloud cloud1"></img>
+    <img src="cloud.png" class="cloud cloud2"></img>
+    <img  src="cloud.png" class="cloud cloud3"></img>
+    <img src="cloud.png" class="cloud cloud4"></img>
+    <img src="cloud.png" class="cloud cloud5"></img>
+    <img src="cloud.png" class="cloud cloud6"></img>
+    <img src="cloud.png" class="cloud cloud7"></img>
+    <img src="cloud.png" class="cloud cloud8"></img> 
+    </div>
+   
+    <div class="cup">
+
+
+        <img src="aleaves.png" alt="" class="aleaves al1">
+        <img src="aleaves.png" alt="" class="aleaves al2">
+        <img src="aleaves.png" alt="" class="aleaves al3">
+        <img src="aleaves.png" alt="" class="aleaves al4">
+        <img src="aleaves.png" alt="" class="aleaves al5">
+        <img src="at-removebg-preview.png" alt="" class="atree">
+    </div>
+
+    <div class="kulfi">
+        <img src="sleaves.png" alt="" class="aleaves al1">
+        <img src="sleaves.png" alt="" class="aleaves al2">
+        <img src="sleaves.png" alt="" class="aleaves al3">
+        <img src="sleaves.png" alt="" class="aleaves al4">
+        <img src="sleaves.png" alt="" class="aleaves al5">
+        <img src="spring.png" alt="" class="atree">
+    </div>
+
+    <div class="cone">
+        <img src="ssnowflakes.png" class="snowflake sn1">
+        <img src="ssnowflakes.png" class="snowflake sn2">
+        <img src="ssnowflakes.png" class="snowflake sn3">
+        <img src="ssnowflakes.png" class="snowflake sn4">
+        <img src="ssnowflakes.png" class="snowflake sn5">
+        <img src="snowtree-removebg-preview.png"  class="stree">
+    </div>
+
+    <div class="chocobar">
+        <img src="rain.png" alt="" class="rain r1">
+        <img src="rain.png" alt="" class="rain r2">
+        <img src="rain.png" alt="" class="rain r3">
+        <img src="rain.png" alt="" class="rain r4">
+        <img src="rain.png" alt="" class="rain r5">
+        <img src="rain.png" alt="" class="rain r6">
+        <img src="rain.png" alt="" class="rain r7">
+        <img src="rain.png" alt="" class="rain r8">
+        <img src="rain.png" alt="" class="rain r9">
+        <img src="rain.png" alt="" class="rain r10">
+    </div>
+
+    <div class="stick"></div>
+    </div>
+
+
+</body>
+</html>
